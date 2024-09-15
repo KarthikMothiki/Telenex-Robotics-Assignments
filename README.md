@@ -1,18 +1,4 @@
-# Telenex-Robotics-Assignments
-
-This repository contains the assignment problems for ROS2 Practice. The following tutorial helps you use [Github Forks and branches](https://www.youtube.com/watch?v=nT8KGYVurIU). 
-
-## Steps:
-- Fork this repo
-- Develop your solutions in your repo
-- Create and branch [Optional]
-- Create a PR [Optional]
-
-  ### The first 2 steps are mandatory
-
---------------------------------------
-# Assignments:
-- Check out the Assignment for ROS2 Messages [here](https://github.com/KarthikMothiki/Telenex-Robotics-Assignments/tree/main/ROS2%20Messages)
-- Check out the Assignment for ROS2 Services [here](https://github.com/KarthikMothiki/Telenex-Robotics-Assignments/tree/main/ROS2%20Services)
-  
-
+ Package Custom Interfaces has msg directory inside that MyPkgMsg.msg contains custom message for q1 and MyPgkMsg.msg contains custom message for q2.
+ package mypkg contains custom_publisher.py and custom_subsciber.pythat uses the above mentioned custom message forq1 and custom_publisher2.py and custom_subsciber2.py for q2.
+ package Custom Interfaces has srv directory inside that MyPkgSrv.srv contains custom service for q1 and MyPgkSrv.srv contains custom service for q2
+ client1, server1 are for q1 and client2, server2 are for q2 

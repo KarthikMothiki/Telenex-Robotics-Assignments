@@ -1,0 +1,7 @@
+int32 id
+float32 crop_yield
+string operational_status
+---
+
+string harvesting_schedule
+bool status
