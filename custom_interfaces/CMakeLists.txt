@@ -10,15 +10,18 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME} 
   "msg/MyPkgMsg.msg"
+  "msg/MyPgkMsg.msg"
   "srv/MyPkgSrv.srv"
   "srv/MyPgkSrv.srv"
   DEPENDENCIES std_msgs
+  DEPENDENCIES geometry_msgs
 )
 
 if(BUILD_TESTING)
@@ -32,5 +35,4 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
 ament_package()
